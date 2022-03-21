@@ -1,4 +1,8 @@
 module.exports = {
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/greenwall/'
+    : '/',
+
   chainWebpack: config => {
     // Don't split vendor and app js
     config.optimization.splitChunks(false)

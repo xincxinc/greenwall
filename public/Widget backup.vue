@@ -4,7 +4,10 @@
     <!-- Main Widget -->
     <div class="cleanslate">
       <ccw-w :class="{flatten: flatten}" :id="`ccw-container-${_uid}`" :size="size" :dark="dark" @click="handleClick">
-
+        <ccw-brand>
+          <img logo svg-inline src="./climateclock.svg">
+          <ccw-span>#ActInTime</ccw-span>
+        </ccw-brand>
         <ccw-flexwrap>
           <ccw-panel deadline>
             <ccw-div>
